@@ -102,3 +102,38 @@ button {
 button:hover {
     background-color: #1d4ed8;
 }
+
+/* 11. Responsive design */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    .contact-container {
+        max-width: 100%;
+        padding: 25px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .contact-container {
+        padding: 22px;
+    }
+
+    .contact-container h1 {
+        font-size: 24px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
