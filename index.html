@@ -17,29 +17,32 @@
         <h1>Contact Us</h1>
         <p>Have a question? We'd love to hear from you.</p>
 
-        <form id="contactForm">
-
+        <form id="contactForm" novalidate>
             <!-- Full Name -->
             <div class="form-group">
                 <label for="fullName">Full Name *</label>
-                <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter your full name"
-                    required
+          <input
+    type="text"
+    id="fullName"
+    name="fullName"
+    autocomplete="name"
+    placeholder="Enter your full name"
+    required
+>     
                 >
             </div>
 
             <!-- Email Address -->
             <div class="form-group">
                 <label for="email">Email Address *</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email address"
-                    required
+               <input
+    type="email"
+    id="email"
+    name="email"
+    autocomplete="email"
+    placeholder="Enter your email address"
+    required
+>
                 >
             </div>
 
@@ -47,11 +50,12 @@
             <div class="form-group">
                 <label for="subject">Subject *</label>
                 <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Enter the subject"
-                    required
+    type="text"
+    id="subject"
+    name="subject"
+    placeholder="Enter the subject"
+    required
+>
                 >
             </div>
 
@@ -71,6 +75,7 @@
             <button type="submit">Send Message</button>
 
         </form>
+        <div id="successMessage" role="status"></div>
 
     </div>
 
